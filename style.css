@@ -195,7 +195,7 @@ select {
 .hero-sub {
   font-size: 20px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {
   .hero-sub {
     font-size: 16px;
   }
@@ -274,7 +274,7 @@ footer {
 .footer-inner a:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {
   .footer-inner {
     flex-direction: column;
     justify-content: left;
