@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+
+:root {
+  --color-primary: #37947d;
+  --color-secondary: #213a35;
+  --color-accent: #e4e67b;
+  --radius-button: 8px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Noto Sans JP;
+}
+.btn:hover{
+    background-color: #d6c700;
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+.menu-title:hover{
+ opacity: 0.7;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+}
+.p-8{
+    padding:1.8rem;
+}
+.hero-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(33, 58, 53, 0.4),
+      rgba(33, 58, 53, 0.2)
+    ),
+   url(/img/fv1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.mincho {
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+
+  &.active {
+    max-height: 500px;
+  }
+}
+
+input[type="checkbox"],
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.button {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-button);
+  color: white;
+
+  &:hover {
+    background-color: lighten($color-primary, 5%);
+  }
+}
+.home-menu{
+    align-items: center;
+}
+.border-r{
+    border-radius: 5px;
+}
+.hero-sub{
+    font-size: 20px;
+    @include sp{
+        font-size: 16px;
+    }
+}
+.md\:w-1\/2
+{
+    width: 60%;
+}
+
+.text-bottom{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 120px;
+        width: 80px;         // 少し短くして上品に
+        bottom: -8px;        // 見出しとの距離を縮める
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #CBD5E0;
+
+
+    }
+}
+.service-subtitle{
+    font-weight: bold;
+}
+.bg-primary {
+  background-color: $color-accent;
+  color: #213A35;
+  font-weight: bold;
+}
+.bg-light{
+ background-color: #EBF4F2;
+}
+.bg-light2{
+    background-color: #f3f8f6 ;
+} 
+.text-primary{
+    color: $color-primary;
+}
+//plan
+.border-primary{
+    border-color: $color-primary;
+}
+.bg-green{
+background-color: $color-primary;
+}
+.accordion-btn{
+    font-size: 17px;
+}
+//voice
+.voice-subtitle{
+    font-weight: bold;
+}
+footer{
+    background-color: #213A35;
+    color: white;
+    padding: 30px 0 10px 0;
+}
+.footer-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding:20px 0;
+    a:hover{
+        opacity: 0.8;
+    }
+    @include sp{
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+.footer-c{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+
+$sp: 375px;
+
+// カラーパレット
+$color-primary: #37947d;
+$color-secondary: #213a35;
+$color-accent: #e4e67b;
+
+// ボーダー半径
+$radius-none: 0px;
+$radius-sm: 4px;
+$radius-default: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+$radius-2xl: 24px;
+$radius-3xl: 32px;
+$radius-full: 9999px;
+$radius-button: 8px;
+
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@use "../global/mixin" as *;
+@use "../global/config" as *;
+
+/* ========== Reset ========== */
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body, h1, h2, h3, h4, h5, h6,
+p, ul, ol, li, figure, figcaption,
+blockquote, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  line-height: 1.6;
+
+  color: #333;
+  background-color: #fff;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+article, aside, footer, header, nav, section, main, figure {
+  display: block;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
