@@ -214,6 +214,7 @@ select {
 @media screen and (max-width: 800px) {
   .md\:w-1\/2 {
      margin-left:0;
+    width:100%;
   }
 }
 
