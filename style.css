@@ -137,6 +137,12 @@ body {
   transition: 0.3s ease;
 }
 
+@media screen and (max-width: 800px) {
+ .btn{
+  width: 100%;
+}
+}
+
 .menu-title:hover {
   opacity: 0.7;
 }
