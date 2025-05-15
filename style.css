@@ -291,6 +291,7 @@ footer {
   .footer-inner {
     flex-direction: column;
     justify-content: left;
+    gap:20px;
   }
 }
 
