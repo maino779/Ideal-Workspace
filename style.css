@@ -307,3 +307,8 @@ footer {
   font-size: 14px;
   padding-top: 30px;
 }/*# sourceMappingURL=style.css.map */
+
+
+.accordion-content.px-6.pb-6 {
+  padding-bottom: 0;
+}
