@@ -137,12 +137,20 @@ body {
   transition: 0.3s ease;
 }
 
-@media screen and (max-width: 800px) {
- .btn{
-  width: 100%;
-}
+.logo-image {
+  width: 140px;
+  height: 38px;
 }
 
+.btn-f {
+  width: 180px;
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 100%;
+  }
+}
 .menu-title:hover {
   opacity: 0.7;
 }
@@ -152,11 +160,11 @@ body {
 }
 
 .p-8 {
-  padding: 1.8rem;
+  padding: 1.8rem 1rem;
 }
 
 .hero-section {
-  background-image: linear-gradient(to right, rgba(33, 58, 53, 0.4), rgba(33, 58, 53, 0.2)), url(fv1.png);
+  background-image: linear-gradient(to right, rgba(33, 58, 53, 0.4), rgba(33, 58, 53, 0.2)), url(/img/fv1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -170,6 +178,8 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  display: block;
+  padding: 0 1.5rem;
 }
 .accordion-content.active {
   max-height: 500px;
@@ -209,13 +219,10 @@ select {
 
 .md\:w-1\/2 {
   width: 60%;
-   margin-left: 40px;
+  margin-left: 40px;
 }
-@media screen and (max-width: 800px) {
-  .md\:w-1\/2 {
-     margin-left:0;
-    width:100%;
-  }
+.md\:w-1\/2 h1 {
+  line-height: 1.2;
 }
 
 .text-bottom {
@@ -230,7 +237,7 @@ select {
   bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #CBD5E0;
+  background-color: #cbd5e0;
 }
 
 .service-subtitle {
@@ -239,12 +246,12 @@ select {
 
 .bg-primary {
   background-color: #e4e67b;
-  color: #213A35;
+  color: #213a35;
   font-weight: bold;
 }
 
 .bg-light {
-  background-color: #EBF4F2;
+  background-color: #ebf4f2;
 }
 
 .bg-light2 {
@@ -272,7 +279,7 @@ select {
 }
 
 footer {
-  background-color: #213A35;
+  background-color: #213a35;
   color: white;
   padding: 30px 0 10px 0;
 }
@@ -291,7 +298,7 @@ footer {
   .footer-inner {
     flex-direction: column;
     justify-content: left;
-    gap:20px;
+    gap: 20px;
   }
 }
 
