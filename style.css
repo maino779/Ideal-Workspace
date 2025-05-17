@@ -159,6 +159,10 @@ body {
   writing-mode: vertical-rl;
 }
 
+.bg-light2.p-8.rounded {
+  padding: 1.8rem 1rem;
+}
+
 .p-8 {
   padding: 1.8rem 1rem;
 }
@@ -306,9 +310,8 @@ footer {
   text-align: center;
   font-size: 14px;
   padding-top: 30px;
-}/*# sourceMappingURL=style.css.map */
-
+}
 
 .accordion-content.px-6.pb-6 {
   padding-bottom: 0;
-}
+}/*# sourceMappingURL=style.css.map */
