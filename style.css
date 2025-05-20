@@ -321,7 +321,9 @@ footer {
   font-size: 14px;
   padding-top: 30px;
 }
-
+.text-gray-600 {
+padding-bottom: 24px;
+}
 .accordion-content.px-6.pb-6 {
   padding-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
