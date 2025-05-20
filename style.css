@@ -225,9 +225,11 @@ select {
   }
 }
 @media (min-width: 768px) {
+  .container{
     .md\:w-1\/2{
         width: 60%;
     }
+  }
 }
 .md\:w-1\/2 {
   width: 60%;
