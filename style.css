@@ -224,7 +224,11 @@ select {
     font-size: 16px;
   }
 }
-
+@media (min-width: 768px) {
+    .md\:w-1\/2{
+        width: 60%;
+    }
+}
 .md\:w-1\/2 {
   width: 60%;
   margin-left: 40px;
