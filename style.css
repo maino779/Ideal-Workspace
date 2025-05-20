@@ -229,6 +229,12 @@ select {
   width: 60%;
   margin-left: 40px;
 }
+@media screen and (max-width: 800px) {
+  .md\:w-1\/2 {
+  width: 100%;
+  margin-left: 0px;
+}
+}
 .md\:w-1\/2 h1 {
   line-height: 1.2;
 }
