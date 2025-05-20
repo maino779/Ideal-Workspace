@@ -286,6 +286,10 @@ select {
   font-size: 17px;
 }
 
+.pd-6 {
+  padding-bottom: 0;
+}
+
 .voice-subtitle {
   font-weight: bold;
 }
