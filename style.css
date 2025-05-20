@@ -172,7 +172,7 @@ body {
 }
 
 .hero-section {
- background-image: linear-gradient(to right, rgba(33, 58, 53, 0.4), rgba(33, 58, 53, 0.2)), url(./img/fv5.png);
+  background-image: linear-gradient(to right, rgba(33, 58, 53, 0.4), rgba(33, 58, 53, 0.2)), url(/img/fv5.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -229,14 +229,12 @@ select {
   width: 60%;
   margin-left: 40px;
 }
-@media screen and (max-width: 800px) {
-  .md\:w-1\/2 {
-  width: 100%;
-  margin-left: 0px;
-}
-}
 .md\:w-1\/2 h1 {
   line-height: 1.2;
+}
+
+.text-gray-600 {
+  padding-bottom: 24px;
 }
 
 .text-bottom {
@@ -321,9 +319,7 @@ footer {
   font-size: 14px;
   padding-top: 30px;
 }
-.text-gray-600 {
-padding-bottom: 24px;
-}　
+
 .accordion-content.px-6.pb-6 {
   padding-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
